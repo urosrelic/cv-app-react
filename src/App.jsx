@@ -8,11 +8,11 @@ function App() {
     name: "",
     lastName: "",
     title: "",
-    description: "",
     email: "",
     location: "",
     website: "",
     phone: "",
+    description: "",
   });
 
   console.log(generalData);

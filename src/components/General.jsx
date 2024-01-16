@@ -34,19 +34,35 @@ export const General = ({ setGeneralData }) => {
       </div>
       <div className='input-container'>
         <label>Email:</label>
-        <input type='email' id='email-input' />
+        <input
+          type='email'
+          id='email-input'
+          onChange={(e) => handleInputChange("email", e)}
+        />
       </div>
       <div className='input-container'>
         <label>Location:</label>
-        <input type='text' id='location-input' />
+        <input
+          type='text'
+          id='location-input'
+          onChange={(e) => handleInputChange("location", e)}
+        />
       </div>
       <div className='input-container'>
         <label>Website:</label>
-        <input type='text' id='website-input' />
+        <input
+          type='text'
+          id='website-input'
+          onChange={(e) => handleInputChange("website", e)}
+        />
       </div>
       <div className='input-container'>
         <label>Phone:</label>
-        <input type='text' id='phone-input' />
+        <input
+          type='text'
+          id='phone-input'
+          onChange={(e) => handleInputChange("phone", e)}
+        />
       </div>
       <div className='input-container'>
         <label>Description:</label>
