@@ -1,5 +1,4 @@
-import { BasicInfo } from "./components/BasicInfo";
-import { ContactInfo } from "./components/ContactInfo";
+import { Editor } from "./components/Editor";
 import { Preview } from "./components/Preview";
 import "./styles.css";
 
@@ -7,10 +6,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Hello</h1>
-      <div className='content'>
-        <BasicInfo />
-        <ContactInfo />
-      </div>
+      <Editor />
       <Preview />
     </div>
   );
