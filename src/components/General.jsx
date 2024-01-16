@@ -1,6 +1,6 @@
-export const BasicInfo = () => {
+export const General = () => {
   return (
-    <div className='basic-info-container'>
+    <div className='general-info-container'>
       <div className='input-container'>
         <label>Name:</label>
         <input type='text' id='name-input' />

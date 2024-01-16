@@ -1,11 +1,10 @@
-import { useState } from "react";
-import { BasicInfo } from "./BasicInfo";
+import { General } from "./General";
 import { ContactInfo } from "./ContactInfo";
 
 export const Editor = () => {
   return (
     <div className='editor-container'>
-      <BasicInfo />
+      <General />
       <ContactInfo />
     </div>
   );
