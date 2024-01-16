@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;500&family=Lato:wght@300;400&family=Montserrat&display=swap");
 * {
-  text-align: center;
+  font-family: "Afacad", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
