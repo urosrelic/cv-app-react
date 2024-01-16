@@ -1,11 +1,11 @@
 import { General } from "./General";
-import { ContactInfo } from "./ContactInfo";
+import { Contact } from "./Contact";
 
 export const Editor = () => {
   return (
     <div className='editor-container'>
       <General />
-      <ContactInfo />
+      <Contact />
     </div>
   );
 };

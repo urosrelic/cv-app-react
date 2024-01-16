@@ -1,4 +1,4 @@
-export const ContactInfo = () => {
+export const Contact = () => {
   return (
     <div className='contact-info-container'>
       <div className='input-container'>
