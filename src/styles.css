@@ -5,6 +5,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* App */
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Basic Info */
 .input-container {
   width: 450px;
