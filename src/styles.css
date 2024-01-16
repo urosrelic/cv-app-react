@@ -37,3 +37,41 @@
   display: flex;
   flex-direction: column;
 }
+
+/* General Data */
+.general-data-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.basic-info {
+  height: 150px;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #313c4e;
+}
+
+.contact-info {
+  display: flex;
+  padding: 15px;
+
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #222a33;
+  color: white;
+  font-size: 12px;
+}
+
+.contact-item {
+  width: 25%;
+  text-align: center;
+}
+
+.contact-item i {
+  margin-right: 5px;
+}
+
+.description {
+  padding: 15px;
+}
