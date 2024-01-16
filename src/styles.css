@@ -4,3 +4,20 @@
   font-family: "Lato", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
+
+/* Basic Info */
+.input-container {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > input {
+  padding: 5px;
+}
+
+.input-container > textarea {
+  padding: 5px;
+  height: 350px;
+  resize: none;
+}
