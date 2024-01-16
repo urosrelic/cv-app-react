@@ -1,16 +1,9 @@
-import { useState } from "react";
-
 export const General = ({ setGeneralData }) => {
-  const [data, setData] = useState({});
-  // const [data, setData] = useState(generalData || {});
-
   const handleInputChange = (fieldName, e) => {
-    setData((currentData) => ({
+    setGeneralData((currentData) => ({
       ...currentData,
       [fieldName]: e.target.value,
     }));
-
-    setGeneralData(data);
   };
 
   return (

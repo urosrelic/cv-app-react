@@ -27,3 +27,13 @@
   height: 350px;
   resize: none;
 }
+
+/* Preview */
+.preview-container {
+  width: 800px;
+  border: 1px solid black;
+}
+.general-info-container {
+  display: flex;
+  flex-direction: column;
+}
