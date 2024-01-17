@@ -1,4 +1,4 @@
-export const GeneralData = ({ data }) => {
+export const GeneralPreview = ({ data }) => {
   return (
     <div className='general-preview-container'>
       <div className='basic-info'>
