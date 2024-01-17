@@ -8,6 +8,7 @@ export const General = ({ setGeneralData }) => {
 
   return (
     <div className='general-info-container'>
+      <h2>General</h2>
       <div className='input-container'>
         <label>Name:</label>
         <input
