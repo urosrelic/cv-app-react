@@ -36,7 +36,7 @@ export const Education = ({ educationData, setEducationData }) => {
     );
   };
 
-  console.log(educationData);
+  // console.log(educationData);
 
   return (
     <div className='education-container'>
