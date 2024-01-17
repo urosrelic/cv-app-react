@@ -87,8 +87,8 @@
   flex-direction: column;
 }
 
-/* General Data */
-.general-data-container {
+/* General Preview */
+.general-preview-container {
   width: 100%;
   display: flex;
   flex-direction: column;

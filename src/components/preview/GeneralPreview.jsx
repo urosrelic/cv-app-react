@@ -1,6 +1,6 @@
 export const GeneralData = ({ data }) => {
   return (
-    <div className='general-data-container'>
+    <div className='general-preview-container'>
       <div className='basic-info'>
         <h2>{data.name + " " + data.lastName}</h2>
         <h3>{data.title}</h3>
