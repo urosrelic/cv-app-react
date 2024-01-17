@@ -29,7 +29,7 @@ function App() {
           educationData={educationData}
           setEducationData={setEducationData}
         />
-        <Preview generalData={generalData} />
+        <Preview generalData={generalData} educationData={educationData} />
       </div>
     </div>
   );
