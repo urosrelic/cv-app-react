@@ -23,7 +23,7 @@ export const GeneralPreview = ({ data }) => {
           {data.phone}
         </div>
       </div>
-      <div className='description'>
+      <div className='description-container'>
         <p>{data.description}</p>
       </div>
     </div>

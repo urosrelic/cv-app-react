@@ -111,9 +111,13 @@
 
 /* Preview */
 .preview-container {
-  height: 842px;
+  height: 100%;
   width: 800px;
   border: 1px solid black;
+}
+
+.cv-container {
+  min-height: 842px;
 }
 
 /* General Preview */
@@ -133,7 +137,6 @@
 .contact-info {
   display: flex;
   padding: 15px;
-
   flex-direction: row;
   justify-content: space-between;
   background-color: #222a33;
@@ -150,7 +153,29 @@
   margin-right: 5px;
 }
 
-.description {
+.description-container {
   padding: 15px;
+}
+
+.description-container p {
   border-bottom: 1px solid black;
+}
+
+/* Education Preview */
+.education-preview-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-preview-item {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+}
+
+.education-preview-item-info {
+  display: flex;
+  flex-direction: column;
 }
