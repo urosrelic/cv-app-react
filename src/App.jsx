@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Editor } from "./components/Editor";
 import { Preview } from "./components/Preview";
 import "./styles.css";
+import { Navbar } from "./components/Navbar";
 
 function App() {
   const [generalData, setGeneralData] = useState({
@@ -19,9 +20,11 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Hello</h1>
-      <Editor setGeneralData={setGeneralData} />
-      <Preview generalData={generalData} />
+      <Navbar />
+      <div className='content'>
+        <Editor setGeneralData={setGeneralData} />
+        <Preview generalData={generalData} />
+      </div>
     </div>
   );
 }
