@@ -16,13 +16,19 @@ function App() {
     description: "",
   });
 
+  const [educationData, setEducationData] = useState([]);
+
   console.log(generalData);
 
   return (
     <div className='App'>
       <Navbar />
       <div className='content'>
-        <Editor setGeneralData={setGeneralData} />
+        <Editor
+          setGeneralData={setGeneralData}
+          educationData={educationData}
+          setEducationData={setEducationData}
+        />
         <Preview generalData={generalData} />
       </div>
     </div>
