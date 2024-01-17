@@ -2,9 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Afacad", sans-serif;
-  font-family: "Lato", sans-serif;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Afacad", "Lato", sans-serif;
 }
 
 /* App */
@@ -61,6 +59,12 @@
 }
 
 /* General */
+.general-info-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
 .input-container {
   width: 450px;
   display: flex;
@@ -79,12 +83,9 @@
 
 /* Preview */
 .preview-container {
+  height: 842px;
   width: 800px;
   border: 1px solid black;
-}
-.general-info-container {
-  display: flex;
-  flex-direction: column;
 }
 
 /* General Preview */
@@ -123,4 +124,5 @@
 
 .description {
   padding: 15px;
+  border-bottom: 1px solid black;
 }
