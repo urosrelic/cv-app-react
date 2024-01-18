@@ -26,6 +26,7 @@
 }
 
 .navbar nav {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,23 +66,47 @@
   margin-bottom: 25px;
 }
 
+.general-info-container h2 {
+  margin-bottom: 10px;
+}
+
 .input-container {
   width: 450px;
   display: flex;
   flex-direction: column;
 }
 
+.input-container > label {
+  font-size: 16px;
+  font-weight: 800;
+}
+
 .input-container > input {
-  padding: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #222a33;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .input-container > textarea {
-  padding: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #222a33;
+  color: #ffffff;
+  font-size: 16px;
   height: 350px;
   resize: none;
 }
 
 /* Education */
+.education-container h2 {
+  margin-bottom: 10px;
+}
 .submitted-education-data {
   display: flex;
   flex-direction: column;
@@ -113,11 +138,12 @@
 .preview-container {
   height: 100%;
   width: 800px;
-  border: 1px solid black;
 }
 
 .cv-container {
+  margin-top: 10px;
   min-height: 842px;
+  border: 1px solid black;
 }
 
 /* General Preview */
