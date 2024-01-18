@@ -4,7 +4,9 @@ export const WorkEntry = ({ entry }) => {
       <div className='work-preview-item-info'>
         <h3>{entry.institutionName}</h3>
         <p>{entry.position}</p>
-        <p>{entry.startDate + " - " + entry.endDate}</p>
+        {entry.startDate ? (
+          <p>{entry.startDate + " - " + entry.endDate}</p>
+        ) : null}
       </div>
     </div>
   );
