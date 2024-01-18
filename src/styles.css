@@ -207,7 +207,7 @@
   margin-right: 5px;
 }
 
-/* Education Preview */
+/* Education Preview, Work Preview */
 .education-preview-container,
 .work-preview-container {
   padding: 15px;
@@ -227,4 +227,16 @@
 .work-preview-item-info {
   display: flex;
   flex-direction: column;
+}
+
+/* Skills Preview */
+.skills-preview-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-list {
+  margin-top: 5px;
+  margin-left: 25px;
 }

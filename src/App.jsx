@@ -41,6 +41,7 @@ function App() {
           generalData={generalData}
           educationData={educationData}
           workData={workData}
+          skillsData={skillsData}
         />
       </div>
     </div>
