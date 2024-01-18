@@ -2,9 +2,9 @@ export const GeneralPreview = ({ data }) => {
   return (
     <div className='general-preview-container'>
       <div className='basic-info'>
-        <h2>{data.name + " " + data.lastName}</h2>
-        <h3>{data.title}</h3>
-        <h3>{data.description}</h3>
+        <h1>{data.name + " " + data.lastName}</h1>
+        <h2>{data.title}</h2>
+        <p>{data.description}</p>
       </div>
       <div className='contact-info'>
         <div className='contact-item'>
