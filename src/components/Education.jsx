@@ -54,7 +54,7 @@ export const Education = ({ educationData, setEducationData }) => {
           </div>
         ))}
       </div>
-      <form onSubmit={handleSubmit}>
+      <form id='education-entry-form' onSubmit={handleSubmit}>
         <div className='input-container'>
           <label htmlFor='school'>School</label>
           <input
@@ -92,7 +92,9 @@ export const Education = ({ educationData, setEducationData }) => {
           />
         </div>
         <div className='input-container'>
-          <button type='submit'>Add</button>
+          <button id='add-entry-btn' type='submit'>
+            Add
+          </button>
         </div>
       </form>
     </div>

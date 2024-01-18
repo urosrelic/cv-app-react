@@ -5,6 +5,22 @@
   font-family: "Montserrat", "Afacad", "Lato", sans-serif;
 }
 
+#add-entry-btn {
+  margin: 10px auto;
+  padding: 10px;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: ease-in-out 0.2s;
+  color: #ffffff;
+  background-color: #222a33;
+}
+
+#add-entry-btn:hover {
+  background-color: #313c4e;
+}
+
 /* App */
 .App {
   display: flex;
