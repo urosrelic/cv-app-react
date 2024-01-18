@@ -1,12 +1,15 @@
 import { useState } from "react";
 
 export const Education = ({ educationData, setEducationData }) => {
+  const [isStudent, setIsStudent] = useState(false);
+
   const [formData, setFormData] = useState({
     id: crypto.randomUUID(),
     school: "",
     degree: "",
     startDate: "",
     endDate: "",
+    student: false,
   });
 
   const handleInputChange = (fieldName, e) => {
@@ -36,11 +39,27 @@ export const Education = ({ educationData, setEducationData }) => {
     );
   };
 
-  // console.log(educationData);
+  const handleCheckbox = (e) => {
+    if (e.target.checked) {
+      setIsStudent(true);
+    } else {
+      setIsStudent(false);
+    }
+
+    setFormData((currentData) => ({
+      ...currentData,
+      student: true,
+    }));
+  };
+
+  console.log(formData);
 
   return (
     <div className='education-container'>
       <h2>Education</h2>
+      <h3>
+        Student: <input type='checkbox' onChange={(e) => handleCheckbox(e)} />
+      </h3>
       <div className='submitted-education-data'>
         {educationData.map((item) => (
           <div key={item.id} className='submitted-education-item'>
@@ -82,15 +101,18 @@ export const Education = ({ educationData, setEducationData }) => {
             onChange={(e) => handleInputChange("startDate", e)}
           />
         </div>
-        <div className='input-container'>
-          <label htmlFor='end-date'>End date:</label>
-          <input
-            type='date'
-            name='end-date'
-            value={formData.endDate}
-            onChange={(e) => handleInputChange("endDate", e)}
-          />
-        </div>
+        {!isStudent && (
+          <div className='input-container'>
+            <label htmlFor='end-date'>End date:</label>
+            <input
+              type='date'
+              name='end-date'
+              value={formData.endDate}
+              onChange={(e) => handleInputChange("endDate", e)}
+            />
+          </div>
+        )}
+
         <div className='input-container'>
           <button id='add-entry-btn' type='submit'>
             Add

@@ -4,7 +4,11 @@ export const EducationEntry = ({ entry }) => {
       <div className='education-preview-item-info'>
         <h3>{entry.degree}</h3>
         <p>{entry.school}</p>
-        <p>{"From: " + entry.startDate + " to: " + entry.endDate}</p>
+        {entry.student === true ? (
+          <p>{entry.startDate + " - Present"}</p>
+        ) : (
+          <p>{entry.startDate + " - " + entry.startDate}</p>
+        )}
       </div>
     </div>
   );
