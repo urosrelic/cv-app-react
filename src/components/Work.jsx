@@ -20,6 +20,14 @@ export const Work = ({ workData, setWorkData }) => {
     e.preventDefault();
 
     setWorkData((currentData) => [...currentData, formData]);
+
+    setFormData({
+      id: crypto.randomUUID(),
+      institutionName: "",
+      position: "",
+      startDate: "",
+      endDate: "",
+    });
   };
 
   const handleDelete = (id) => {
