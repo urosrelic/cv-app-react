@@ -20,6 +20,8 @@ function App() {
 
   const [workData, setWorkData] = useState([]);
 
+  const [skillsData, setSkillsData] = useState([]);
+
   console.log(generalData);
 
   return (
@@ -32,6 +34,8 @@ function App() {
           setEducationData={setEducationData}
           workData={workData}
           setWorkData={setWorkData}
+          skillsData={skillsData}
+          setSkillsData={setSkillsData}
         />
         <Preview
           generalData={generalData}

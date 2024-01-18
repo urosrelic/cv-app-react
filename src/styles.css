@@ -119,19 +119,27 @@
   resize: none;
 }
 
-/* Education, Work*/
+/* Education, Work, Skills*/
 .education-container h2,
-.work-container h2 {
+.work-container h2,
+.skills-container h2 {
   margin-bottom: 10px;
 }
 .submitted-education-data,
-.submitted-work-data {
+.submitted-work-data,
+.submitted-skills-data {
+  display: flex;
+  flex-direction: column;
+}
+
+#skills-entry-form {
   display: flex;
   flex-direction: column;
 }
 
 .submitted-education-item,
-.submitted-work-item {
+.submitted-work-item,
+.submitted-skill-item {
   padding: 15px;
   margin: 15px 0;
   display: flex;
@@ -200,20 +208,23 @@
 }
 
 /* Education Preview */
-.education-preview-container {
+.education-preview-container,
+.work-preview-container {
   padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
-.education-preview-item {
+.education-preview-item,
+.work-preview-item {
   margin: 25px 0;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid black;
 }
 
-.education-preview-item-info {
+.education-preview-item-info,
+.work-preview-item-info {
   display: flex;
   flex-direction: column;
 }

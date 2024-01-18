@@ -1,5 +1,6 @@
 import { Education } from "./Education";
 import { General } from "./General";
+import { Skills } from "./Skills";
 import { Work } from "./Work";
 
 export const Editor = (props) => {
@@ -11,6 +12,9 @@ export const Editor = (props) => {
   const workData = props.workData;
   const setWorkData = props.setWorkData;
 
+  const skillsData = props.skillsData;
+  const setSkillsData = props.setSkillsData;
+
   return (
     <div className='editor-container'>
       <General setGeneralData={setGeneralData} />
@@ -19,6 +23,7 @@ export const Editor = (props) => {
         setEducationData={setEducationData}
       />
       <Work workData={workData} setWorkData={setWorkData} />
+      <Skills skillsData={skillsData} setSkillsData={setSkillsData} />
     </div>
   );
 };
