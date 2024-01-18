@@ -64,10 +64,7 @@ export const Education = ({ educationData, setEducationData }) => {
         {educationData.map((item) => (
           <div key={item.id} className='submitted-education-item'>
             <p>School: {item.school}</p>
-            <div
-              id='delete-education-item-btn'
-              onClick={() => handleDelete(item.id)}
-            >
+            <div id='delete-btn' onClick={() => handleDelete(item.id)}>
               <i className='fa-solid fa-trash'></i>
             </div>
           </div>

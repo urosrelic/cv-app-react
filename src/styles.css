@@ -119,16 +119,19 @@
   resize: none;
 }
 
-/* Education */
-.education-container h2 {
+/* Education, Work*/
+.education-container h2,
+.work-container h2 {
   margin-bottom: 10px;
 }
-.submitted-education-data {
+.submitted-education-data,
+.submitted-work-data {
   display: flex;
   flex-direction: column;
 }
 
-.submitted-education-item {
+.submitted-education-item,
+.submitted-work-item {
   padding: 15px;
   margin: 15px 0;
   display: flex;
@@ -141,12 +144,12 @@
   font-size: 24px;
 }
 
-#delete-education-item-btn {
+#delete-btn {
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
 
-#delete-education-item-btn:hover {
+#delete-btn:hover {
   color: red;
 }
 
