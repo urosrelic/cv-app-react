@@ -128,7 +128,8 @@
 }
 
 .basic-info {
-  height: 150px;
+  min-height: 100px;
+
   padding: 15px;
   color: #ffffff;
   background-color: #313c4e;

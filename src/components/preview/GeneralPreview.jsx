@@ -4,6 +4,7 @@ export const GeneralPreview = ({ data }) => {
       <div className='basic-info'>
         <h2>{data.name + " " + data.lastName}</h2>
         <h3>{data.title}</h3>
+        <h3>{data.description}</h3>
       </div>
       <div className='contact-info'>
         <div className='contact-item'>
