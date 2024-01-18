@@ -33,7 +33,11 @@ function App() {
           workData={workData}
           setWorkData={setWorkData}
         />
-        <Preview generalData={generalData} educationData={educationData} />
+        <Preview
+          generalData={generalData}
+          educationData={educationData}
+          workData={workData}
+        />
       </div>
     </div>
   );
