@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Editor } from "./components/Editor";
 import { Preview } from "./components/Preview";
-import "./styles.css";
 import { Navbar } from "./components/Navbar";
+import exampleData from "./constants/exampleData";
+import "./styles.css";
 
 function App() {
   const [generalData, setGeneralData] = useState({
@@ -17,16 +18,19 @@ function App() {
   });
 
   const [educationData, setEducationData] = useState([]);
-
   const [workData, setWorkData] = useState([]);
-
   const [skillsData, setSkillsData] = useState([]);
 
-  console.log(generalData);
+  const loadExampleData = () => {
+    setGeneralData(exampleData.generalData);
+    setEducationData(exampleData.educationData);
+    setWorkData(exampleData.workData);
+    setSkillsData(exampleData.skillsData);
+  };
 
   return (
     <div className='App'>
-      <Navbar />
+      <Navbar loadExampleData={loadExampleData} />
       <div className='content'>
         <Editor
           setGeneralData={setGeneralData}

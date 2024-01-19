@@ -1,4 +1,4 @@
-export const Navbar = () => {
+export const Navbar = ({ loadExampleData }) => {
   const handlePrint = () => {
     window.print();
   };
@@ -11,8 +11,8 @@ export const Navbar = () => {
           <div id='print-btn' onClick={handlePrint}>
             <i className='fa-solid fa-print'></i>
           </div>
-          <div id='load-example-btn'>
-            <i className='fa-solid fa-id-card'></i>
+          <div id='load-example-btn' onClick={loadExampleData}>
+            Load example data
           </div>
         </div>
       </nav>
