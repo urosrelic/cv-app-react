@@ -21,6 +21,18 @@
   background-color: #313c4e;
 }
 
+@media print {
+  /* Print only the preview component */
+  .editor-container,
+  .navbar {
+    display: none;
+  }
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 /* App */
 .App {
   display: flex;
